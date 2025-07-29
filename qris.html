@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pembayaran QRIS</title>
+  <link rel="stylesheet" href="cart.css" />
+  <style>
+    .qris-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 50px auto;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .qris-container img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #555;
+    }
+
+    .warning {
+      font-size: 14px;
+      color: #a00;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="qris-container">
+    <h1>Scan QRIS untuk Pembayaran</h1>
+    <img src="qris.png" alt="QRIS Pembayaran" />
+    <p class="warning">Pastikan nominal pembayaran sesuai dengan total belanja Anda.</p>
+    <a href="index.html" class="back-button">Kembali ke Katalog</a>
+  </div>
+</body>
+</html>
