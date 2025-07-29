@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Katalog Preorder</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Katalog Preorder</h1>
+      <div class="nav-buttons">
+        <a href="index.html">Ready Stock</a>
+        <a href="preorder.html" class="active">Preorder</a>
+        <button id="cart-btn">Keranjang 🛒</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <input type="text" id="searchInput" placeholder="Cari produk preorder..." />
+    <select id="categoryFilter">
+      <option value="">Semua Kategori</option>
+    </select>
+    <select id="dayFilter">
+      <option value="">Semua Hari Kirim</option>
+    </select>
+    <div id="product-list" class="product-container"></div>
+  </main>
+
+  <div id="cart-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Keranjang Preorder</h2>
+      <div id="cart-items"></div>
+      <p>Total: <span id="cart-total">Rp 0</span></p>
+      <button id="wa-checkout-btn">Konfirmasi via WhatsApp</button>
+      <a href="qris.html" class="qris-btn">Bayar via QRIS</a>
+    </div>
+  </div>
+
+  <script>
+    const isPreorderPage = true;
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
